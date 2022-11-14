@@ -44,3 +44,12 @@ Por fim, o retorno de uma função é o que ela vai te dar depois dos procedimen
 
     c = somaDoisValores(a, b)
     print(c) # Vai imprimir 3
+
+
+## Exemplo
+No arquivo 'exemplo.py' temos um conjunto de funções estão sendo definidas em cima e utilizadas dentro da função main, que, por acaso, também está definida acima e sendo utilizada no final do arquivo.
+
+
+## Exercício
+No arquivo 'main.py' temos duas funções para serem completadas, somaDoisValores e printarAlgo.
+

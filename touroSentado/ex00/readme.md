@@ -48,5 +48,17 @@ Obs: Python corre seus arquivos de cima pra baixo, então se você tentar usar u
 
 Isso é verdade para qualquer coisa, seja uma variável, função, classe, etc.
 
+## Exemplo
+Dentro do arquivo 'exemplo.py' tem um conjunsto de print(type()) que vão imprimir o tipo de dado de cada variável, além disso, tem uma descrição sobre listas, tuplos e dicionários.
+
 ## Exercício
-No main tu vais encontrar uma função sendo
+Tu vais encontrar uma lista de variáveis no arquivo 'main.py', tu precisa completar o código para que ele imprima o tipo de cada variável, veja o exemplo abaixo:
+
+    a = 1
+    b = "Hello World"
+    c = 1.5
+    d = True
+    print(type(a)) # Vai imprimir <class 'int'>
+    print(type(b)) # Vai imprimir <class 'str'>
+    print(type(c)) # Vai imprimir <class 'float'>
+    print(type(d)) # Vai imprimir <class 'bool'>
