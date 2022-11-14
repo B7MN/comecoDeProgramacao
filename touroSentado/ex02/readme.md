@@ -1,4 +1,4 @@
-# Exercício 02 - Entendo funções
+# Exercício 02 - Entendendo funções
 ## O que são funções?
 Funções são a base de qualquer linguagem de programação, elas são a únicas coisas que existem além de variáveis, alguns exemplos de funções são:
 - print() - Imprime algo na tela;

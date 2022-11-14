@@ -1,4 +1,4 @@
-# Exercício 00 - Entendo variáveis
+# Exercício 00 - Entendendo variáveis
 ## O que são variáveis?
 Variáveis são a base de qualquer linguagem de programação, elas são a únicas coisas que existem além de funções, alguns exemplos de implementação de variáveis são:
 - a = 1 - A variável `a` recebe o valor inteiro 1;
