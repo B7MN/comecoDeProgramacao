@@ -1,55 +1,127 @@
-# Exercício 02 - Entendendo funções
-## O que são funções?
-Funções são a base de qualquer linguagem de programação, elas são a únicas coisas que existem além de variáveis, alguns exemplos de funções são:
-- print() - Imprime algo na tela;
-- input() - Solicita ao usuário algum valor de entrada, usamos ela para pegar o número naquele jogo de adivinhar número aleatório;
-- type() - Retorna o tipo de dado de uma variável, se é int, float, string, etc;
+# Exercício 02 - Entendendo If's, while e ForLoop
+Existem algumas vezes que queremos percorrer toda um conjunto de dados e verificar se algum deles bate com alguma informação que temos, por exemplo, se um número é par ou ímpar, se um número é maior que outro, se uma string é igual a outra, etc. Para isso, utilizamos If's, While e ForLoop.
 
-Apesar do Python ter quase infinitas funções de milhões de pessoas das comunidades de programadores na internet, as vezes precisamos fazer algo em específico, para resolver um problema específico, e para isso precisamos criar nossas próprias funções, vamos fazer isso agora.
+## If's
+If's são responsáveis por verificar se uma condição é verdadeira ou falsa, caso seja verdadeira, ele executa o código que está dentro do If, caso seja falsa, ele executa o código que está dentro do Else. Abaixo temos alguns exemplos:
 
-## Criando/definindo uma função
-Para criar uma função, usamos a palavra reservada `def`, seguida do nome da função, e, se for necessário, entre parênteses os parâmetros que a função vai receber. Por fim dois pontos `:`. Veja o exemplo abaixo:
+    # Verificando se um número é par
+    numero = 2
+    if numero % 2 == 0:
+        print('O número é par')
+    else:
+        print('O número é ímpar')
+    # O número é par
 
-    def minha_funcao(parametro1, parametro2):
-        # Código da função
+    # Verificando se um número é maior que outro
+    numero1 = 2
+    numero2 = 1
+    if numero1 > numero2:
+        print('O número 1 é maior que o número 2')
+    else:
+        print('O número 2 é maior que o número 1')
+    # O número 1 é maior que o número 2
 
-Parametros são variáveis que a função vai receber, e que podem ser usadas dentro da função, como se fossem variáveis normais. Veja o exemplo abaixo:
+    # Verificando se uma string é igual a outra
+    string1 = 'a'
+    string2 = 'a'
+    if string1 == string2:
+        print('As strings são iguais')
+    else:
+        print('As strings são diferentes')
+    # As strings são iguais
 
-    def minha_funcao(parametro1, parametro2):
-        print(parametro1)
-        print(parametro2)
+## While
+While é responsável por verificar se uma condição é verdadeira ou falsa, caso seja verdadeira, ele executa o código que está dentro do While, caso seja falsa, ele não executa o código que está dentro do While. Abaixo temos alguns exemplos:
 
-Também não podemos usar uma funções antes de defini-la, por exemplo, se eu tentar usar a função `minha_funcao` antes de defini-la, o Python vai dar um erro, veja o exemplo abaixo:
+    # Verificando se um número é par, enquanto ele for par, ele continua verificando, como ele acrescenta o valor, ele vai rodar somente uma vez.
+    numero = 2
+    while numero % 2 == 0:
+        print('O número é par')
+        numero += 1
+    # O número é par
 
-    minha_funcao(1, 2)
-    def minha_funcao(parametro1, parametro2):
-        print(parametro1)
-        print(parametro2)
+    # Verificando se um número é maior que outro, neste caso ele também vai rodar somente uma vez, pois o número 2 é maior até que seja reduzido em 1.
+    numero1 = 2
+    numero2 = 1
+    while numero1 > numero2:
+        print('O número 1 é maior que o número 2')
+        numero1 -= 1
+    # O número 1 é maior que o número 2
 
-Outra informação importante é a identação, ela é muito importante em Python, e é usada para definir o que está dentro da função, e o que está fora. Veja o exemplo abaixo:
+    # Verificando se uma string é igual a outra, neste caso, o while vai permanecer rodando indefinidamente, pois não existe nenhuma alteração dentro dele para que ele pare de rodar.
+    string1 = 'a'
+    string2 = 'a'
+    while string1 == string2:
+        print('As strings são iguais')
+    # As strings são iguais
 
-    def minha_funcao(parametro1, parametro2):
-        print(parametro1)
-        print(parametro2)
+## ForLoop
+ForLoop é responsável por percorrer um conjunto de dados, como uma lista, um dicionário, uma tupla, etc. Abaixo temos alguns exemplos:
 
-    print("Estou fora da função")
-    minha_funcao("Estou dentro da função", "E também estou dentro da função")
+    # Percorrendo uma lista
+    lista = [1, 2, 3, 4, 5]
+    for item in lista:
+        print(item)
+    # 1
+    # 2
+    # 3
+    # 4
+    # 5
 
-Por fim, o retorno de uma função é o que ela vai te dar depois dos procedimentos que ela faz, por exemplo, se eu tenho uma função que soma dois números, o retorno dela é a soma dos dois números, veja o exemplo abaixo:
+    # Percorrendo um dicionário
+    dicionario = {'a': 1, 'b': 2, 'c': 3}
+    for item in dicionario:
+        print(item)
+    # a
+    # b
+    # c
 
-    a = 1
-    b = 2
-    def somaDoisValores(a, b):
-        return a + b
+    # Percorrendo uma tupla
+    tupla = (1, 2, 3, 4, 5)
+    for item in tupla:
+        print(item)
+    # 1
+    # 2
+    # 3
+    # 4
+    # 5
 
-    c = somaDoisValores(a, b)
-    print(c) # Vai imprimir 3
+    # Percorrendo uma string, as string são um conjunto de caracteres, então, ele vai percorrer cada caractere da string, como uma lista.
+    string = 'abcde'
+    for item in string:
+        print(item)
+    # a
+    # b
+    # c
+    # d
+    # e
 
+    # Percorrendo um range, aqui ele cria uma lista com os números que começam no primeiro valor e terminam antes do segundo, isso é, de 1 a 5.
+    for item in range(1, 6):
+        print(item)
+    # 1
+    # 2
+    # 3
+    # 4
+    # 5
+
+    # Percorrendo um range com passo, de 2 em 2, a lista ficou [1, 3, 5]
+    for item in range(1, 6, 2):
+        print(item)
+    # 1
+    # 3
+    # 5
+
+    # Percorrendo um range com passo negativo
+    for item in range(5, 0, -1):
+        print(item)
+    # 5
+    # 4
+    # 3
+    # 2
+    # 1
 
 ## Exemplo
-No arquivo 'exemplo.py' temos um conjunto de funções estão sendo definidas em cima e utilizadas dentro da função main, que, por acaso, também está definida acima e sendo utilizada no final do arquivo.
-
+No arquivo exemplo.py temos uma série de exemplos do que foi falado acima, interessante ver como poucas linhas podem fazer muita coisa.
 
 ## Exercício
-No arquivo 'main.py' temos duas funções para serem completadas, somaDoisValores e printarAlgo.
-

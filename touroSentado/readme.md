@@ -6,4 +6,5 @@ Dentro de cara pasta existem três arquivos: 'readme.md', 'main.py' e 'exemplo.p
 
 ## Exercícios já feitos
 - [ ] Ex00 - Entendendo variáveis
-- [ ] Ex02 - Entendendo funções
+- [ ] Ex01 - Entendendo operações básicas
+- [ ] Ex03 - Entendendo funções
